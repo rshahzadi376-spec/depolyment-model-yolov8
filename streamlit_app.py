@@ -64,7 +64,7 @@ if uploaded_file is not None:
                 annotated_img_rgb = cv2.cvtColor(annotated_img_bgr, cv2.COLOR_BGR2RGB)
 
                 st.subheader("Detection Results:")
-                st.image(annotated_img_rgb, caption="Detected Objects", use_column_width=True)
+                st.image(annotated_img_rgb, caption="Detected Objects", use_container_width=True)
 
                 # Optionally display confidence scores and bounding box coordinates
                 if len(r.boxes) > 0:
